@@ -9,7 +9,10 @@ console.log("Login view");
  * Main module of the application.
  */
 const app = angular
-  .module('cRedditApp', ['ngRoute'])
+  .module('cRedditApp', [
+    'ngRoute',
+    'firebase'
+    ])
   .constant('FirebaseURL',
     "https://c-reddit.firebaseio.com");
 
